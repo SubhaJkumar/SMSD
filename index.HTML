@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainovate</title>
+<style>
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom,#000, #1c0202);
+    color: white;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+        background: linear-gradient(to bottom,#000, #1c0202);
+
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    
+        background: linear-gradient(to bottom,#000, #1c0202);
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Mobile Toggle Button */
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Layout for Mobile View */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background: linear-gradient(to bottom,#000, #1c0202);
+
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+
+/* Main Section */
+.main {
+    text-align: center;
+    padding: 50px;
+        
+    
+}
+
+.main h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    
+}
+
+.main p {
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+        background: linear-gradient(to bottom,#D14545, #FFD045);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* About Us Section */
+.about-us {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Events Section */
+.event-cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.event-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+}
+
+/* Responsive Events Section */
+@media (max-width: 768px) {
+    .event-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+        background: linear-gradient(to bottom,#1c0202, #000);
+    margin-top: 20px;
+}
+ /* Key Features Section */
+        #features {
+            text-align: center;
+        }
+
+        #features .feature-box {
+            background-color: #404040;
+            padding: 20px;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        
+         /* People Behind Us Section */
+        #people {
+            text-align: center;
+        }
+
+        #people .person {
+            display: inline-block;
+            margin: 15px;
+            text-align: center;
+        }
+
+        #people img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        
+        #who .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  font-size:14px;
+  
+}
+
+#who .text {
+    width: 60%;
+}
+
+#who .image img {
+    width: 100%;
+    max-width: 300px;
+}
+ .image-container {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+</style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">SMSD</img></div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Who we are</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="https://forms.gle/DpSDybRx2Nxam75UA" style="color:white;" target="_blank">Register now</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle">&#9776;</button>
+        </nav>
+    </header>
+
+
+       
+    <section id="who">
+         <h2 align="center">The Stella Maris Sustainable Development Students’ Hub 
+
+        <div class="content">
+            <div class="text">
+                <h1 align="left" style="font-family:American Typewriter;font-size:46px;  font-weight: 500;">Sustainovate</h1>
+                <h2 align="left" style="font-family:American Typewriter;font-size:30px;  font-weight: 400;">Pitching for a Better Tomorrow!</h2>
+                <h3 align="left" style="font-family: Arial;">At Sustainovate, we are igniting innovation by organizing a pitch competition that focuses on sustainable development.  Join us in transforming visionary ideas into actionable solutions for a better world.</h3>
+            </div>
+            <div class="image">
+                <img src="SMSD-LOGO.PNG" alt="SMSD">
+                        <p class="event-stats" style="font-size:16px;font-family:verdana;">6 Events | 1 Idea | 1 Prototype</p>
+
+            </div>
+        </div>
+    </section>
+
+        <div class="buttons" align="left">
+            <button><A href="https://heyzine.com/flip-book/bd6ac19210.html#page/2" style="color:white;">Brochure</a></button>
+            <button><A href="https://forms.gle/DpSDybRx2Nxam75UA" style="color:white;">Register</a></button>
+            <button><A href="https://lu.ma/lojwcr3l" style="color:white;">Overview</a></button>
+        </div>
+    </section>
+
+    <section class="about-us" id="about">
+        <h2 align="center">About Us</h2>
+        <p align="center" style="text-align:justify;">The Stella Maris Sustainable Development (SMSD) Student’s Hub, launched in 2022 by the ⁠Department of Economics of Stella Maris College, helps students to transform theoretical knowledge into 
+actionable insights. SMSD is a student driven programme and a member of the <i>Sustainable Development Solutions Network (SDSN) - a global initiative for the United Nations.</i></p>
+    </section>
+<BR<BR>
+    <section class="goals">
+        <h2 align="center">Discover the 17 Sustainable Development Goals and their global impact.</h2>
+        
+<div class="image-container"> <img src="PHOTO-2024-09-29-11-08-12.jpg" alt="SMSD"  >     </div>  <div class="goal-icons">
+            <!-- Icons for goals -->
+        </div>
+    </section>
+    <br><br>
+
+    <section class="events" id="events">
+        <h2 align="center">Events</h2>
+        <div class="event-cards">
+            <div class="event-card">Workshop 1<p align="center" style="text-align:justify;">This event will be the official inauguration of the competition. The first workshop comprises of sessions on Design Thinking and Marketing with AI to educate students on how to create, present and market their pitches effectively.<p></div>
+            <div class="event-card">Workshop 2 <p align="center" style="text-align:justify;">This workshop will guide participants, particularly arts students, on formulating effective policies and creating data sets. This session will emphasize integrating data-driven insights into scalable policy recommendations, enhancing the impact of solutions.<p></div>
+            <div class="event-card">Round 1<p align="center" style="text-align:justify;">Round 1 would include two elements - a pitch presentation and marketing using AI. Participants must propose their pitches and sell their ideas using AI-driven marketing strategies. The best pitches of this event will move on to round 2.<p></div>
+        </div>
+    </section>
+
+
+ <section class="events" id="events">
+        <h2 align="center">Events</h2>
+        <div class="event-cards">
+            <div class="event-card">Workshop 3<p align="center" style="text-align:justify;">The teams selected from round 1 will then be offered a workshop on rapid prototyping using different available tools. This workshop would also act as a platform for them to clarify doubts and seek guidance in their prototyping journey.<p></div>
+            <div class="event-card">Finals <p align="center" style="text-align:justify;">This would be the final round, where the participants present their project prototype. These will then be evaluated based on their scalability, feasibility and market value to the winners. Winners will receive exciting cash prizes and exclusive opportunities.<p></div>
+            <div class="event-card">Post-competition follow-up<p align="center" style="text-align:justify;">Winners will present their ideas in a winner’s showcase. 
+This would also involve post-competition steps like connecting them with potential investors or collaborating with SMC’s incubation cell to practically implement the prototype and increase its scale.<p></div>
+        </div>
+    </section>
+    <br><br>
+    
+   <section id="people">
+        <h2>People Behind Us</h2>
+        <div class="person">
+       <a href="https://www.linkedin.com/in/sharun-a-94b771131/" target="_blank">     <img src="SMSD_Advisors1.png" alt="SMSD"></a>
+            <p style="font-size:18px;">Faheera Shayan</p>
+            <p align="left" style="font-size:14px;">Renewable Energy Analyst <br> IITM Research Park<br><br><br><br></p>
+        </div>
+        <div class="person">
+         <a href="https://www.linkedin.com/in/faheera-s/" target="_blank">    <img src="SMSD_Advisors2.png" alt="SMSD"></a>
+             <p style="font-size:18px;">Mrudula Isaac</p>
+            <p align="left" style="font-size:14px;">Generative AI specialist <br> RRD Go Creative<br><br><br><br></p>
+        </div>
+        <div class="person">
+       <a href="https://www.linkedin.com/in/amardeepdevadason/" target="_blank">      <img src="SMSD_Advisors3.png" alt="SMSD"></a>
+              <p style="font-size:18px;">Amardeep Devadason</p>
+             <p align="left" style="font-size:14px;">Senior Vice President <br>Head of Global Brand Solutions <br> RRD Go Creative<br><br><br></p>
+        </div>
+        <div class="person">
+       <a href="https://www.linkedin.com/in/mrudula-isaac/" target="_blank">      <img src="SMSD_Advisors4.png" alt="SMSD"></a>
+            <p style="font-size:18px;"><B>Sharun A</p>
+             <p align="left" style="font-size:14px;">Manager at Villgro,<br>Partnerships & Ecosystem Building, <br>Impact Investing, <br>Social Entrepreneurship, <br>Social Impact-CSR-ESG</p>
+        </div>
+    </section>
+    <br><br>
+ <section id="features">
+        <h2 align="center">Key Features</h2><br>
+               <h1>Prototyping: </h1>
+        <div class="feature-box">
+     
+            <p align="center" style="text-align:justify;">Participants will develop and present scalable prototypes, which can include physical models, research proposals, or policy recommendations</p>
+        </div>
+                       <h1>Innovative Approach:</h1>
+
+        <div class="feature-box">
+        <div class="feature-box">
+     
+            <p align="center" style="text-align:justify;">The event is committed to providing an unbiased platform where prototypes from all different academic disciplines are equally valued creating a medium for students from both the arts and the sciences to showcase their solutions</p>        </div></div>
+            
+                             <h1>Mentorship and Guidance:</h1>
+
+        <div class="feature-box">
+        <div class="feature-box">
+     
+            <p align="center" style="text-align:justify;">Another key element of the event includes workshops on prototype development, mentorship and guidance resources for participants as well as technical experts on the judging panel - to create a growth-maximising environment for participating students</p>             </div>
+            </div>
+                           <h1>Post-Event Follow-up:</h1>
+
+        <div class="feature-box">
+        <div class="feature-box">
+     
+            <p align="center" style="text-align:justify;">Participants will develop and present scalable prototypes, which can include physical models, research proposals, or policy recommendations which will then be scaled beyond competition.</p>   
+            </div>  
+        </div>
+    </section>
+    
+    
+    <footer id="contact"  align="center">
+        <p>Contact Us :<br>
+        
+        Gmail <br>
+        smsd@stellamariscollege.edu.in<br><br>
+        LinkedIn<br>
+        <A href="https://in.linkedin.com/company/smsd-students-hub" style="color:white;">https://in.linkedin.com/company/smsd-students-hub</a><br><br>
+        Instagram
+        <br>
+        <a href="https://www.instagram.com/smsd_sh/" style="color:white;">smsd_sh </a>
+        </p>
+    </footer>
+
+    <script>
+        // Toggle navigation menu in mobile view
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth scrolling for section links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        // Automatically close menu when a link is clicked
+const navLinks = document.querySelectorAll('nav ul li a');
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        document.getElementById('nav-toggle').classList.remove('active');
+        document.getElementById('navbar').classList.remove('active');
+    });
+});
+    </script>
+</body>
+</html>
